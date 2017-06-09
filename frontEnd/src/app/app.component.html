@@ -1,0 +1,19 @@
+<!--The whole content below can be removed with the new code.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!!
+  </h1>
+  <img src="../assets/java.jpg" />
+</div>
+<div>
+     <button (click)="getRandomError()">Get Random Error</button>
+</div>
+<div>
+     <button (click)="getSolution(error_msg)">Get Solution</button>
+</div>
+<h2 > {{error_msg?.question}} </h2>
+<h2>Here are some links for solution: </h2>
+<ul>
+  <li>
+    <h2><a target="_blank" href={{link?.link}}>{{link?.link}}</a></h2>
+  </li>
